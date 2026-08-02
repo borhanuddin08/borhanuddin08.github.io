@@ -50,3 +50,26 @@ document.querySelector('.hero-btn').addEventListener('click', (e) => {
     e.preventDefault();
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 });
+
+// Modal functionality
+const modal = document.getElementById('contactModal');
+const btn = document.getElementById('sendMessageBtn');
+const span = document.getElementById('closeModalBtn');
+
+// Open the modal 
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.style.display = 'block';
+});
+
+// Close the modal on X click
+span.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Close the modal when clicking outside of it
+window.addEventListener('click', (e) => {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
+});
