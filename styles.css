@@ -394,8 +394,52 @@ a {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-white);
-    margin-bottom: 10px;
     line-height: 1.5;
+    flex: 1;
+}
+
+.pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.pub-badge {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pub-actions {
+    margin-top: 14px;
+}
+
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 6px;
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.pub-btn:hover {
+    background: rgba(0, 229, 255, 0.2);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
 }
 
 .card-tech-detail {
